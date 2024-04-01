@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="director-message.css">
+
+    <title>Chairman Message</title>
+
+</head>
+
+
+
+<body>
+
+    <!------------ Top Navbar ------------>
+
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+    <br><br>
+
+    <!------------ chairman message ------------>
+
+
+
+    <div class="m-container">
+
+        <div class="m-content">
+
+            <div class="m-items" id="m-items-img">
+
+                <img src="assets/images/precident.png" alt="Director-Photo" width="240px" height="240px">
+
+            </div>
+
+            <div class="m-items">
+
+                <h1 style="color: rgb(15, 97, 106);  background-image: linear-gradient(to right, rgb(199, 248, 255), aliceblue);font-family: Comic Sans MS">Chairman's Message
+
+                    <hr> </h1> <br>
+
+                <p>Dear MBA aspirant, </p>
+
+                <p> It is our immense pleasure to have you in enrolled in Vishwakarma Dadasaheb Chavan Institute of Management and Research. Through the prospectus I wish to give you a brief introduction of our Institute. The foundations of our institute
+                    lie in the basic vision of overall social development, as well as opening up avenues to the rural and needy students. In order to impart world class management knowledge and exposure, an academic support collaboration with the esteemed
+                    Vishwakarma Institute of Management, Pune, which boasts of a top line faculty with wider exposure. The alumni of Vishwakarma Institute of Management are occupying distinguished positions with the brands like Mercedes Benz, Thermax,
+                    Tata Ryerson, Hindustan Lever, Bharat Forge, Reliance, HDFC, Godrej, PepsiCo, etc. We are also looking forward to provide full support to the students through VIM to get placed in such blue chip organizations. A dedicated campus, well-qualified
+                    and expert faculty, updated library, fully equipped class rooms, individual computer to each student, well-furnished hostel, private transport system and located in the lap of nature, are some of the key features of our Institute.
+                    To inculcate the required skills at international level, we are planning to set up a Language lab, organize workshops on Soft skills, Interview techniques, Personality development and many more.<br> We believe that our students from
+                    various specializations such as Finance Marketing, IT, HR, Production will not only flourish in their careers but also be good leaders in their respective areas of expertise.</p><br>
+
+                <p> My heartiest wishes for your bright future ahead. God bless you all!!</p>
+
+                <p> <b>Shri. Dilip Dadasaheb
+
+                        Chavan,</b> </p><br>
+
+                <p> Chairman – Shree Dhanlaxmi Foundation, Karad.</p><br>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+
+</body>
+
+
+
+</html>

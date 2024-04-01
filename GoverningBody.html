@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Governing Council</title>
+
+    <style>
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin: 1% 4% 4% 4%;
+        }
+        
+        .table-section {
+            width: 50%;
+            display: block;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .table-section h2 {
+            color: #b20000;
+        }
+        
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------------ Top Navbar ------------>
+
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+    <br><br>
+
+    <div class="table-container">
+        <div class="table-section">
+            <h2>Governing Council</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Shri. Diliprao Dadasaheb Chavan</td>
+                        <td>Founder and President (Chairman)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Smt. Aruna Diliprao Chavan</td>
+                        <td>Trustee (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Shri. Bhalchandra Dadasaheb Chavan</td>
+                        <td>Trustee (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Smt. Padmaja Bhalchandra Chavan</td>
+                        <td>Trustee (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Shri. Mohanrao Nanasaheb Chavan</td>
+                        <td>Trustee (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Shri. Amit Diliprao Chavan</td>
+                        <td>Secretary (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Member, AICTE, WRO Mumbai</td>
+                        <td>AICTE Nominee (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Member, DTE, RO, Pune</td>
+                        <td>DTE Nominee (Member)</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Dr. N.R. Jadhav</td>
+                        <td>Director (Secretary)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-container {
+            padding: 2% 10% 5% 10%;
+            margin: auto;
+        }
+        
+        #photoGallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px 10px;
+        }
+        
+        .m-head h2 {
+            color: #b20000;
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .imgContainer {
+            width: 200px;
+            height: 160px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+        }
+        
+        .imgContainer img {
+            max-width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------ Top Navbar ------------>
+
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+
+    <br><br>
+    <div class="main-container">
+        <div class="m-head">
+            <h2>College Infrastructure</h2>
+        </div>
+        <div id="photoGallery"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Non-Teaching-staff</title>
+
+    <style>
+        .container {
+            display: flex;
+            width: 920px;
+            height: auto;
+            margin: 30px auto;
+        }
+        
+        .box {
+            width: 32%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-right: 1%;
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            transition: 0.9;
+        }
+        
+        .box:hover {
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+            cursor: pointer;
+        }
+        
+        .box img {
+            padding: 30px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .box p {
+            text-align: center;
+            color: rgb(104, 92, 92);
+        }
+        
+        .box p {
+            font-size: 15px;
+            text-align: left;
+            padding: 1px 20px 20px 25px;
+        }
+        
+        @media (max-width: 800px) {
+            .container {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 85%;
+                display: block;
+            }
+            .box {
+                width: 100%;
+                margin-bottom: 4%;
+            }
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!------------ Top Navbar ------------>
+
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+
+
+
+    <!------------- non-teaching staff---------------->
+
+
+
+    <div class="non-teaching-container">
+
+        <p>NON-TEACHING STAFF</p>
+
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+
+            <img src="assets\images\faculty//Mr.Pradip-Jagannath-Patil.jpg" alt="" style=" height: 280px;">
+
+            <p><b>Name :</b> Mr.Pradip Jagannath Patil <br> <b>Designation :</b> Clerk <br> <b>Qualification :</b> B.Com <br> <b>Industrial Experience :</b> 2 years
+
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <img src="assets\images\faculty/Vikas-Yadav.jpg" alt="" style=" height: 280px;">
+
+            <p><b>Name :</b> Mr. Vikas Yadav <br> <b>Designation :</b> Peon
+
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <img src="assets\images\faculty/Dnyaneshwar-Patil.jpg" alt="" style=" height: 280px;">
+
+            <p><b>Name :</b> Mr. Dyaneshwar Patil <br> <b>Designation :</b> Peon
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="non-teaching-staff-container">
+
+        <div class="non-teaching-staff-content">
+
+            <img src="assets/images/precident.png" alt="">
+
+            <div class="non-teaching-staff-items">
+
+                <p>Name : Mr.Pradip Jagannath Patil <br> Designation : Clerk <br> Qualification : B.Com <br> Industrial Experience : 2 years
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="non-teaching-staff-content">
+
+            <img src="assets/images/precident.png" alt="">
+
+            <div class="non-teaching-staff-items">
+
+                <p>Name : Mr. Vikas Yadav <br> Designation : Peon
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="non-teaching-staff-content">
+
+            <img src="assets/images/precident.png" alt="">
+
+            <div class="non-teaching-staff-items">
+
+                <p>Name : Mr. Dyaneshwar Patil <br> Designation : Peon
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div> -->
+
+
+
+
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+</body>
+
+</html>

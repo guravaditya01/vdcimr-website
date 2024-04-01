@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>College Development Committee</title>
+    <style>
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin: 1% 4% 4% 4%;
+        }
+        
+        .table-section {
+            width: 50%;
+            display: block;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .table-section h2 {
+            color: #b20000;
+        }
+        
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------------ Top Navbar ------------>
+
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+    <br><br>
+
+    <div class="table-container">
+        <div class="table-section">
+            <h2>College Development Committee</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Hon. Shri. DilipBhau D. Chavan</td>
+                        <td>Chairman</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mr. Amit D.Chavan</td>
+                        <td>Secretary</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Dr. N. R. Jadhav</td>
+                        <td>Director</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Prof. Ms. A. P. Sawant</td>
+                        <td>Coordinator, IQAC</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Prof. G. K. Injekar</td>
+                        <td>Faculty Representative</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Prof. S. D. Chavan</td>
+                        <td>Faculty Representative</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Prof. R.S. Tribhuvan</td>
+                        <td>Faculty Representative</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Mr. P. J. Patil</td>
+                        <td>Non-teaching Representative</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Mr. Dhiraj Gandhi</td>
+                        <td>Social Activist</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Dr. S.S. Bhola</td>
+                        <td>Representative (Research)</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Dr. S.R. Ghatage</td>
+                        <td>Representative (Educationalist)</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Mr. Sandip Kotnis</td>
+                        <td>Representative (Industrialist)</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Mr. Venkatrao Patil</td>
+                        <td>Invitee Member of the Management</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+
+</body>
+
+</html>

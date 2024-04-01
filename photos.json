@@ -1,0 +1,13 @@
+[
+    { "name": "Bus facility", "url": "assets/images/Infrastructure/Bus facility.JPG" },
+    { "name": "Campus Entrance", "url": "assets/images/Infrastructure/Campus Entrance.jpg" },
+    { "name": "College Canteen", "url": "assets/images/Infrastructure/College Canteen.jpg" },
+    { "name": "Computer Lab", "url": "assets/images/Infrastructure/Computer Lab.JPG" },
+    { "name": "Greenery at Campus", "url": "assets/images/Infrastructure/Greenery at Campus.jpg" },
+    { "name": "Internal View of College", "url": "assets/images/Infrastructure/Internal View of College.JPG" },
+    { "name": "Learn While Fun", "url": "assets/images/Infrastructure/Learn While Fun.JPG" },
+    { "name": "Library", "url": "assets/images/Infrastructure/Library.jpg" },
+    { "name": "Office", "url": "assets/images/Infrastructure/Office.jpg" },
+    { "name": "Sport Ground", "url": "assets/images/Infrastructure/Sport Ground.jpg" },
+    { "name": "Staff Room", "url": "assets/images/Infrastructure/Staff Room.jpg" }
+]

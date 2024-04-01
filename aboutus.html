@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>MBA</title>
+    <style>
+        /******************** President-desk-container ********************/
+        
+        .additional-pages-container {
+            display: flex;
+            padding: 5% 10%;
+        }
+        
+        .president-desk-container {
+            /* padding: 5% 3% 5% 5%; */
+            width: 73%;
+        }
+        
+        .president-desk-container h2 {
+            font-size: 35px;
+            padding: 30px 0 30px 0;
+            color: #259c96;
+            font-family: "Comic Sans MS", "Comic Sans";
+        }
+        
+        @media(max-width:900px) {
+            .additional-pages-container {
+                display: block;
+                padding: 1% 5%;
+            }
+            .president-desk-container {
+                /* padding: 5% 3% 5% 5%; */
+                width: 100%;
+            }
+            .president-desk-container h2 {
+                font-size: 35px;
+                padding: 30px 0 30px 0;
+                color: #0e76a8;
+                font-family: "Comic Sans MS", "Comic Sans";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!------------ Top Navbar ------------>
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+
+    <div class="additional-pages-container">
+        <div class="president-desk-container">
+            <h2>About VDCIMR:</h2>
+            <p>
+                Vishwakarma Dadasaheb Chavan Institute of Management and Research (VDCIMR) was established in 2010 by the renowned first-generation entrepreneur Hon’ble. Shri. Diliprao Dadasaheb Chavan in the fond memory of his father (Late) Advocate Hon’ble. Shri. Dadasaheb
+                Chavan. VDCIMR is a higher education institution that is affiliated with Shivaji University, Kolhapur and provides high-quality education to young people from rural, economically, and socially disadvantaged areas of society. VDCIMR offers
+                a professional post-graduate program in Management culminating in a Master of Business Administration (MBA). <br><br> The Institute has undergone a change in order to provide outcome-based education, which is seen in the
+                placement, alumni, and accomplishments of the students. Faculty members, who are qualified and committed, endeavor to achieve educational goals. Co-curricular and extracurricular activities help the youth discover their natural skills
+                and instill in them the ideals of democracy, the rule of law, and humanity. <br><br> The IQAC oversees and ensures compliance with quality standards in educational and other transactions. Continuous improvement is facilitated through a
+                variety of types of feedback, including those on institutional services, curricular aspects, teaching, learning, evaluation, teacher performance, and college-wide activities. VDCIMR has played a vital role in the rehabilitation of rural
+                and underprivileged populations in the area throughout the course of its 13-year-long history. </div>
+    </div>
+
+
+    <!------------- Footer---------------->
+    <footer>
+        <script>
+            // Fetch and insert common-footer content
+            fetch('common-footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('beforeend', html);
+                });
+        </script>
+
+</body>
+
+</html>

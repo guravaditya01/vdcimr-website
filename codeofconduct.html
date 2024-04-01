@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Code of Conduct for Students</title>
+    <style>
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin: 1% 4% 4% 4%;
+        }
+        
+        .table-section {
+            width: 50%;
+            display: block;
+        }
+        
+        .table-section h2 {
+            color: #b20000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .table-section ul {
+            list-style-type: square;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .table-section li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------------ Top Navbar ------------>
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+    <br><br>
+    <div class="table-container">
+        <div class="table-section">
+            <section>
+                <h2>Code of Conduct for Students</h2>
+
+                <ul>
+                    <li>The student must observe and strictly follow the disciplinary rules and regulations of the Institute.</li>
+                    <li>Any act of indiscipline or misbehavior by any student will attract strict disciplinary action.</li>
+                    <li>Students shall only use the dust bins for disposing waste materials in classrooms to make the college campus free from plastic and other litter.</li>
+                    <li>Any case of criminal activity or violation of law and order in the College Campus will be reported to the police.</li>
+                    <li>Every student must carry with him / her college and campus I-card every day while attending lectures and appearing for various examinations and should be produced when demanded by the authorized persons of the Institute.</li>
+                    <li>At the time of issuing a book, the Identity Card must be presented.</li>
+                    <li>Students must be cooperative with classmates and teachers on various academic and developmental activities in the campus as well as outside the campus.</li>
+                    <li>Students are expected to wear college uniform regularly as per the schedule prescribed.</li>
+                    <li>Students are expected to be in decent dress code on casual days.</li>
+                    <li>The student should switch off their mobile phones while in the classroom and Library and during any event at Auditorium the mobiles are prohibited as per notification.</li>
+                    <li>Student must be regular in attending all lectures throughout the year.</li>
+                    <li>Ragging is strictly prohibited in the campus. If any student found involved in such kind of activities action will be taken against students indulging and abetting in as per the Directions of Hon’ble Supreme court of India.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+
+</body>
+
+</html>

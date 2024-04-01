@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Resources</title>
+    <style>
+        /* Container styles */
+        
+        .main-container {
+            display: flex;
+            justify-content: center;
+            margin: 3% 5%;
+        }
+        
+        .inner-container {
+            width: 80%;
+            max-width: 800px;
+        }
+        
+        .inner-container h2 {
+            color: #b20000;
+            padding: 0 0 40px 0;
+            font-size: 35px;
+        }
+        
+        .inner-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .inner-container li {
+            margin-bottom: 10px;
+        }
+        /* Indentation styles */
+        
+        .inner-li,
+        .inner2-li,
+        .inner-inner-li {
+            position: relative;
+            left: 0;
+        }
+        
+        .inner-container a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .inner-container a:hover {
+            text-decoration: underline;
+        }
+        /* Media queries */
+        
+        @media only screen and (min-width: 600px) {
+            .inner-li {
+                left: 20px;
+            }
+            .inner-inner-li {
+                left: 85px;
+            }
+            .inner2-li {
+                left: 40px;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .inner-container {
+                width: 70%;
+            }
+            .inner-li {
+                left: 40px;
+            }
+            .inner-inner-li {
+                left: 120px;
+            }
+            .inner2-li {
+                left: 60px;
+            }
+        }
+        
+        @media only screen and (min-width: 992px) {
+            .inner-container {
+                width: 60%;
+            }
+            .inner-li {
+                left: 60px;
+            }
+            .inner-inner-li {
+                left: 150px;
+            }
+            .inner2-li {
+                left: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+    <br><br>
+    <div class="main-container">
+        <div class="inner-container">
+            <h2>Library Resources</h2>
+
+            <ul>
+                <li><b>E Library Books</b> ⟶ <a href="https://www.pdfdrive.com/business-management-books.html" target="_blank">PDF Drive - Business Management Books</a></li>
+                <li><b>Digital Library</b> ⟶ <a href="https://www.bestebooksworld.com/" target="_blank">Best eBooks World</a></li>
+            </ul>
+
+            <ul>
+                <li><b>Journals</b> ⟶ International ⟶ AIMS International Journal of Management Harvard Business Review
+                    <ul class="inner-li">
+                        <li><b>National</b> ⟶ ARTHSHASTRA: Indian Journal of Economics & Research
+                            <ul class="inner-inner-li">
+                                <li>Chartered Accountant </li>
+                                <li>Current Index in Marketing</li>
+                                <li>Indian Journal of Research in Capital Markets</li>
+                                <li>Journal of Training & Development</li>
+                                <li>ITIHAS The Journal of Indian Management</li>
+                                <li>Journal of Corporate Social Responsibility</li>
+                                <li>Journal of Science & Technology Management</li>
+                                <li>LBS Journal of Management & Research</li>
+                                <li>Management Accountant</li>
+                                <li>Training & Development Journal</li>
+                                <li>Vinimaya</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3></h3>
+            <ul>
+                <li><b>Online Journal</b> ⟶ <a href="https://jgateplus.com/" target="_blank">J Gate</a></li>
+            </ul>
+
+            <ul>
+                <li><b>E Resources</b> ⟶ E Newspapers ⟶ <a href="http://epaper.business-standard.com/bsepaper/login.php" target="_blank"> Business Standard - E Newspaper</a>
+
+
+                    <ul class="inner2-li">
+                        <li><a href="https://indianexpress.com/express-plus/today-newsstand/" target="_blank">The Indian Express - E Newspaper</a></li>
+                        <li><a href="https://economictimes.indiatimes.com/?from=mdr" target="_blank">The Economic Times - E Newspaper</a></li>
+                        <li><a href="http://newspaper.pudhari.co.in/index.php" target="_blank">Pudhari - E Newspaper</a></li>
+                        <li><a href="https://epaper.esakal.com/FlashClient/Client_Panel.aspx#currPage=1" target="_blank">Sakal - E Newspaper</a></li>
+                        <li><a href="http://epaper.lokmat.com/index.php" target="_blank">Lokmat - E Newspaper</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <h3>Directories</h3>
+            <ul>
+                <li><a href="https://doaj.org/" target="_blank">THE DIRECTORY OF OPEN ACCESS JOURNALS</a></li>
+            </ul>
+
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="https://shodhganga.inflibnet.ac.in/" target="_blank">Shodhganga</a></li>
+                <li><a href="http://www.dtemaharashtra.gov.in/" target="_blank">Admission Process</a></li>
+                <li><a href="https://mahadbt.maharashtra.gov.in/login/login" target="_blank">Scholarship</a></li>
+                <li><a href="http://www.unishivaji.ac.in/" target="_blank">Shivaji University</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="director-message.css">
+
+    <title>MBA</title>
+
+</head>
+
+
+
+<body>
+
+
+
+    <!------------ Top Navbar ------------>
+    <div class="common-navbar">
+        <script>
+            // Fetch and insert common-navbar content
+            fetch('common_navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('afterbegin', html);
+                });
+        </script>
+    </div>
+
+    <br><br>
+
+    <div class="m-container">
+
+        <div class="m-content">
+
+            <div class="m-items" id="m-items-img">
+
+                <img src="assets/images/NRJ-Photo2.png" alt="Director-Photo" width="240px" height="240px">
+
+            </div>
+
+            <div class="m-items">
+
+                <h1 style="color: rgb(15, 97, 106);  background-image: linear-gradient(to right, rgb(199, 248, 255), aliceblue);font-family: Comic Sans MS">Director Message
+
+                    <hr> </h1> <br>
+
+                <p>I welcome you to Vishwakarma Dadasaheb Chavan Institute of Management and Research (VDCIMR). This Institute located in a rural area of Satara district of Maharashtra state, is a result of our founder Shri. Dilip (Bhau) Dadsaheb Chavan’s
+                    vision. A successful entrepreneur who is committed to the rural society. His mission in life is to give it back to the rural students. VDCIMR founded in 2010, is one of the first rural based management institute offering a post-graduate
+                    programme in MBA with an infrastructure and general facilities that are unparalleled in the country. We are proud to follow the path laid down by our founder. Today the world is witnessing a change due to globalization and transformation
+                    of technology. These changes have thrown open challenges that tomorrow’s managers have to address. It is our constant effort at VDCIMR to hone the skills required of our students to face these challenges. Our well qualified and experienced
+                    team of faculty is a proper blend of industry and academia. Our faculty strives through internship and micro-teaching to ensure that the students are equipped with skills to not only face but lead the corporate world. We the faculty
+                    and staff at VDCIMR would be immensely happy and have a sense of achievement if we are able to produce more and more entrepreneurs who would utilize local resources and convert them to globally demanded products and services. Thus
+                    rightfully contribute to the economy of India. We are well aware that today’s managers need to acquire specialized knowledge and skills not only to become successful managers in their organizations. Rather they also become responsible
+                    citizens of India and participate in making India a economic super power. I welcome you to browse through our website and learn more about the Institute and its activities. <br> <br> Thanking you. <br> Dr. N. R. Jadhav <br> Director,
+
+                    <br> VDCIMR
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!------------- Footer---------------->
+    <script>
+        // Fetch and insert common-footer content
+        fetch('common-footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+</body>
+
+</html>
